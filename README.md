@@ -1,12 +1,12 @@
 # JauheJampan KaluPakki
 
-Jauhejampan Kalupakki on graafinen työkalulajitelma suunniteltu helpottamaan ja nopeuttamaan jauheensäkittäjän rutiininomaisia toimia. Osa toiminnoista on itsenäisiä ohjelmia, osa nk. skriptejä eli peräkkäin ajettavia komentoja jotka ovat riippuvaisia emo-ohjelmasta.
+Jauhejampan Kalupakki on graafinen työkalulajitelma suunniteltu helpottamaan ja nopeuttamaan jauheensäkittäjän rutiininomaisia toimia. Osa toiminnoista on itsenäisiä ohjelmia, osa skriptejä jotka ovat riippuvaisia emo-ohjelmasta.
 
 ## Tarra-Aparaatti
 
 Tarra-Aparaatti tulostaa nimensä mukaisesti jauhesäkkien näytetarrat. Skripti kysyy montako tarraa käyttäjä haluaa ja hoitaa loput koneellisesti. Turvaominaisuuksina:
 - Liian suuren/pienen inputin esto
-- Emo-ohjelman tilan lukeminen ja tarvittaessa saattaminen haluttuun tilaan että skripti voidaan suorittaa
+- Emo-ohjelman tilan lukeminen ja tarvittaessa saattaminen haluttuun tilaan jotta skripti voidaan suorittaa
 
 ## SäkkiAjastin
 
