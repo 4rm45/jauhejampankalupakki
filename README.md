@@ -21,3 +21,7 @@ Lavalappulatoja tulostaa eräajona lavalaput samaan tyyliin kuin TarraAparaatti 
 ## Asetukset
 
 Asetuksissa voit säätää KaluPakin toiminnallisuutta. TarraAparaatin, SäkkiAjastimen ja LavaLappuLatojan oletuksena olevia starttiarvoja voi optimoida omaan makuun sekä SäkkiAjastimen toimintaa säätää tarkemmin.
+
+## Loki ja hätäseis
+
+Jos KaluPakin toimet herättävät epäilystä tai jos esim. ohjelma ei jostain syystä toimi, voi sen kokoamia lokitietoja tarkastella KaluPakin hakemistosta löytyvästä log-tiedostosta. Tähän tiedostoon ohjelma kirjaa kaikki tekemänsä toimet. Samoin jos ohjelma tekee omiaan tai lakkaa kokonaan toimimasta, saa missä tahansa vaiheessa ESC-näppäimen painalluksella ohjelman terminoitua.
