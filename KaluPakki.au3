@@ -345,7 +345,7 @@ Local $idButton_Reset, $idButton_CloseTimer, $idLabel_SackGone, $idLabel_SackLef
 $idLabel_MinuteIndicator, $idLabel_ETA, $idLabel_KilosGone, $idLabel_KilosLeft, $idLabel_MinutesGone, _
 $idLabel_MinutesLeft, $idLabel_ETALeft, $aClockUnfloat, $aDateUnfloat, $bColorLoopDone, $bETADone, $bPopUpLoopDone, _
 $bAlarmDone, $bLogLoopDone, $bBackgroundColorLoopDone, $fSackLeft, $fMinutesGone
-$idButton_Reset = GUICtrlCreateButton("Nollaa", 35, 75, 75, 25) ; Ja vitullinen määrä tekstejä ja nappeja
+$idButton_Reset = GUICtrlCreateButton("Nollaa", 35, 75, 75, 25) ; Ja **tullinen määrä tekstejä ja nappeja
 $idButton_CloseTimer = GUICtrlCreateButton("Sulje", 115, 75, 75, 25)
 $idLabel_SackGone = GUICtrlCreateLabel("Mennyt:", 20, 27, 38, Default, $SS_RIGHT) ; 38?
 $idLabel_SackLeft = GUICtrlCreateLabel("Jälellä:", 20, 47, 38, Default, $SS_RIGHT)
