@@ -185,15 +185,15 @@ _FileWriteLog(@ScriptDir & "\log.log", "Aloitetaan näytetarrojen kirjaaminen ja
 Do	; Looppi alkaa
    MouseClick($MOUSE_CLICK_PRIMARY, 65, 975, 1, 3)	; "Lisää näyte"
    Send($nLap)	; Syötä juokseva luku
-   MouseClick($MOUSE_CLICK_PRIMARY, 85, 825, 1, 5)	; "Säkkinäyte"
+   MouseClick($MOUSE_CLICK_PRIMARY, 85, 810, 1, 5)	; "Säkkinäyte"
    Sleep(500)	; Just in case
    MouseClick($MOUSE_CLICK_PRIMARY, 510, 975, 1, 3)	; "Tulosta näyttarra"
-   MouseClick($MOUSE_CLICK_PRIMARY, 715, 640, 1, 3)	; "Säkkinäyte"
+   MouseClick($MOUSE_CLICK_PRIMARY, 715, 620, 1, 3)	; "Säkkinäyte"
    Sleep(50) ; SingleFours -workaround
    Send("{ENTER}")	; "Ok"
    Sleep(300)	; Just in case
    MouseClick($MOUSE_CLICK_PRIMARY, 510, 975, 1, 3)	; "Tulosta näyttarra"
-   MouseClick($MOUSE_CLICK_PRIMARY, 715, 640, 1, 3)	; "Säkkinäyte"
+   MouseClick($MOUSE_CLICK_PRIMARY, 715, 620, 1, 3)	; "Säkkinäyte"
    Sleep(400) ; DoubleDigits -tulosteworkaround -Aika pitkä?
    Send("{ENTER}")	; "Ok"
 
@@ -318,7 +318,7 @@ While 1 ; Pollataan käyttäjän interactionia
 					 For $i = 1 To 100 Step +2 ; Tsekkaa winukan voluumi
 					 Send("{VOLUME_DOWN}")
 					 Next
-					 For $i = 1 To 50 Step +2
+					 For $i = 1 To 70 Step +2
 					 Send("{VOLUME_UP}")
 					 Next
 				  GUIDelete()
@@ -513,7 +513,7 @@ Run("masked.exe") ; Käynnistä masked
 Sleep(3500)
 _FileWriteLog(@ScriptDir & "\log.log", "masked käynnistetty.")
 Send("{ENTER}") ; Kirjaudu
-Sleep(2400)
+Sleep(2600)
 _FileWriteLog(@ScriptDir & "\log.log", "Kirjauduttu masked:iin.")
 Send("masked")
 Send("{ENTER}") ; Lavalappujen tulostus
