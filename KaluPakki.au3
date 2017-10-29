@@ -663,6 +663,8 @@ While 1 ; Oota confirmationia
 		 _FileWriteLog(@ScriptDir & "\log.log", "Asetukset suljettu.")
 		 MainGUI()
 	  Case $idButton_SaveOK
+	  	 GUICtrlSetState ($idButton_SaveOK, $GUI_DISABLE)
+		 GUICtrlSetState ($idButton_SaveNO, $GUI_DISABLE)
 		 IniWrite("settings.ini", "TarraAparaatti", "TarratTarjolla", $nStickerAmountSetting) ; Tallenna asetukset
 		 IniWrite("settings.ini", "SäkkiAjastin", "SäkkiAika", $nSackTimeSetting)
 		 IniWrite("settings.ini", "SäkkiAjastin", "Normiraja", $nAlarmLimitSetting)
@@ -678,6 +680,7 @@ WEnd
 EndFunc
 
 Func Terminate() ; Hätäseis
+    _SoundPlay(@ScriptDir & "\boopbeep.wav", $SOUND_WAIT)
     _FileWriteLog(@ScriptDir & "\log.log", "Hätä-seis painettu!")
     Exit
 EndFunc
