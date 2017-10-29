@@ -17,7 +17,7 @@ Opt("TrayMenuMode",1) ; Hävitä trayn valikko
 
 Local $sVerNumber, $hGUI_Main
 
-$sVerNumber = "v1.0b"
+$sVerNumber = "v1.2b"
 
 $hGUI_Main = GUICreate("JauheJampan KaluPakki", 410, 115, Default, Default, $WS_POPUPWINDOW) ; Luo pääkäyttöliittymä
 Local $idButton_Stickers, $idButton_Timer, $idButton_Exit, $nStickerDefaultAmount, $eSackTime, $nAlarmLimit, _
