@@ -1,4 +1,4 @@
-; Jauhejampan KaluPakki
+; JauheJampan KaluPakki
 
 #include <AutoItConstants.au3> ; MouseClick
 #include <GUIConstantsEx.au3> ; GUI
@@ -17,13 +17,13 @@ Opt("TrayMenuMode",1) ; Hävitä trayn valikko
 
 Local $sVerNumber, $hGUI_Main
 
-$sVerNumber = "v1.2-beta"
+$sVerNumber = "v1.2.1-beta"
 
 $hGUI_Main = GUICreate("JauheJampan KaluPakki", 410, 115, Default, Default, $WS_POPUPWINDOW) ; Luo pääkäyttöliittymä
 Local $idButton_Stickers, $idButton_Timer, $idButton_Exit, $nStickerDefaultAmount, $eSackTime, $nAlarmLimit, _
 $nThirdAlarmLimit, $nSackDefaultAmount, $nPalletDefaultAmount, $idGraphic_SeparatorMain
 GUICtrlCreateLabel("JauheJampan Kalupakki", 12, 9, Default, 15, $SS_LEFT) ; Ja tekstit
-GUICtrlCreateLabel($sVerNumber, 364, 9, Default, 15, $SS_RIGHT)
+GUICtrlCreateLabel($sVerNumber, 336, 9, Default, 15, $SS_RIGHT)
 $idButton_Stickers = GUICtrlCreateButton("Tarrat", 10, 35, 70, 70, $BS_ICON)
 ; GUICtrlSetImage ($idButton_Stickers,"ico/barcode.ico")
 $idButton_Timer = GUICtrlCreateButton("Ajastin", 90, 35, 70, 70, $BS_ICON)
